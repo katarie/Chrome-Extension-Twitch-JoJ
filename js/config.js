@@ -4,7 +4,8 @@ let config = {
         "youtube": "https://www.youtube.com/channel/UCKxtv7rCzYjpiDRxuIehVdw",
         "twitter": "https://twitter.com/JoJ_TTV",
         "Utip": "https://utip.io/joj",
-        "discord": "https://discord.gg/cbxpbgA"
+        "discord": "https://discord.gg/cbxpbgA",
+        "instantgaming":"https://www.instant-gaming.com/fr/?igr=gamer-c6fa5f"
     },
 
 
