@@ -3,7 +3,7 @@
 	"name" : "test azamir notif", //TODO : changer le nom
 	"short_name" : " Notifications Twitch", //TODO : changer le name
 	"description" : "Génère une notification lorsque passe en live sur Twitch.", //TODO : changer la description
-	"version" : "1.3.2",
+	"version" : "1.3.5",
 	"author" : "Azamir",
 
 	"permissions" : [
