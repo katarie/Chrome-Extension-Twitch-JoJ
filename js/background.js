@@ -2,8 +2,8 @@
 var api = 'helix'; //New Twitch API. V5 is depreciated.
 var client_id = 'xo5ahtyvlvs6j24ni40717bvs4e5ck'; //
 var user = '38185373';  //user ID //
-var timeToCheckLive = '30000'; //every 30s //TODO : timer 30s peut etre changer
-var timeToResetNotifs = '10800000'; //every 3 hours //TODO : timer 3h peut etre changer
+var timeToCheckLive = '30000'; //every 30s
+var timeToResetNotifs = '10800000'; //every 3 hours
 /**************************************************/
 
 let stateNotif = "waitNotif";

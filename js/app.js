@@ -5,6 +5,6 @@ chrome.runtime.onInstalled.addListener(function() {
 
 document.addEventListener('contextmenu', event => eventRightClic(event));
 function eventRightClic(event){
-    chrome.tabs.create({ url : 'https://www.twitch.tv/joj_'}); // TODO : url twitch a modifier
+    chrome.tabs.create({ url : 'https://www.twitch.tv/joj_'});
     event.preventDefault();
 }
