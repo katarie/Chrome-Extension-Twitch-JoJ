@@ -86,7 +86,7 @@ function checkStream(user, client_id, api, notification){
 					if(typeof notif != "undefined"){
 						notif.onclick = function(event) {
 							  event.preventDefault(); 
-							  window.open('http://twitch.tv/Azamir', '_blank'); // TODO : url twitch a modifier
+							  window.open('https://twitch.tv/joj_', '_blank'); // TODO : url twitch a modifier
 							  cleanNotif(notif);
 						}
 					}
