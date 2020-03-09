@@ -9,7 +9,7 @@ body{
 	width: 450px;
 	height: 250px;
 	color: skyblue;
-	background: linear-gradient(#00b8ff, #002bff);
+	background: black;
 }
 
 #font{
@@ -43,6 +43,7 @@ body{
     font-size: medium;
     text-align: center;
     display: inline;
+	top: -7px;
 }
 #thirdWordStatusLink{
 	text-decoration: none;
@@ -88,8 +89,8 @@ body{
 #liveTitle{
 	color: white;
 	position: relative;
-	top: 195px;
-	left: 8px;
+	top: 160px;
+	margin: 8px;
 	font-size: medium;
 	font-size: 1.8em;
 }

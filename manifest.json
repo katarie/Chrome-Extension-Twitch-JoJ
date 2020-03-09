@@ -1,9 +1,9 @@
 {
 	"manifest_version" : 2,
-	"name" : "JoJ", //TODO : changer le nom
-	"short_name" : " Notifications Twitch", //TODO : changer le name
-	"description" : "Génère une notification lorsque passe en live sur Twitch.", //TODO : changer la description
-	"version" : "1.3.9",
+	"name" : "JoJ",
+	"short_name" : " Notifications Twitch",
+	"description" : "Etre au courant quand JoJ est en live, accéder au planning de la semaine et liens vers les reseaux sociaux", //TODO : changer la description
+	"version" : "1.4.9",
 	"author" : "Azamir",
 
 	"permissions" : [
@@ -15,14 +15,15 @@
 	],
 	"browser_action" : {
 
-		"default_icon" : "img/logo_300.png", //TODO : changer l'icone par defaut
+		"default_icon" : "img/JoJ_64.png",
         "default_popup" : "popup.html"
 	},
 
 
 	"icons" : {
-		"64" : "img/icon-on-64.png",//TODO : changer l'icone par defaut
-		"128" : "img/icon-on-128.png"
+		"64" : "img/JoJ_64.png",//TODO : changer l'icone par defaut
+		"128" : "img/JoJ_transparent_128.png",
+		"256" : "img/JoJ_transparent_256.png"
 	},
 
 	"background" : {

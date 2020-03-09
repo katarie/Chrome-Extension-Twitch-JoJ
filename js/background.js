@@ -36,12 +36,12 @@ function checkStream(user, client_id, api, notification){
 				//Fuze is not streaming
 				stateNotif = "waitNotif";
 				$('.msgOffline').show();
-				$('#thirdWordStatusLink').html("[HORS LIGNE]");	// TODO : possibiliter de changer [HORS LIGNE]
+				$('#thirdWordStatusLink').html("OFFLINE");	// TODO : possibiliter de changer [HORS LIGNE]
 				$('#thirdWordStatusLink').css('color', 'red');
 				$('.viewerBox').hide(); 
 				$('.titleBox').hide(); 
 				$('.gameBox').hide();
-				chrome.browserAction.setIcon({path: "img/icon-off-64.png"}); // TODO : changer Icone Stream OFF
+				chrome.browserAction.setIcon({path: "img/JoJ_64.png"}); // TODO : changer Icone Stream OFF
 				
 			}else{
 				//is streaming
@@ -68,13 +68,13 @@ function checkStream(user, client_id, api, notification){
 				}
 
 				$('#msgOffline').hide();
-				$('#thirdWordStatusLink').html("[EN LIVE]"); // TODO : possibiliter de changer [EN LIVE]
+				$('#thirdWordStatusLink').html("ONLINE");
 				$('#thirdWordStatusLink').css('color', 'green');
 				$('#viewerCount').html(improveViewersDisplay(liveViewersCount));
 				$('#liveTitle').html(liveTitle);
 				$('.msgOffline').hide();
 				$('.gameBox').css('visibility', 'visible');
-				chrome.browserAction.setIcon({path: "img/icon-on-64.png"}); // TODO : changer Icone Stream ON
+				chrome.browserAction.setIcon({path: "img/JoJ_transparent_64.png"});
 			}	
 				
 				if(stateNotif === "ready2sendNotif" && notification===true){
@@ -86,7 +86,7 @@ function checkStream(user, client_id, api, notification){
 					if(typeof notif != "undefined"){
 						notif.onclick = function(event) {
 							  event.preventDefault(); 
-							  window.open('https://twitch.tv/joj_', '_blank'); // TODO : url twitch a modifier
+							  window.open('https://twitch.tv/joj_', '_blank');
 							  cleanNotif(notif);
 						}
 					}
@@ -101,8 +101,8 @@ function cleanNotif(notif){
 }
 
 function sendNotif(){
-	return new Notification('Stream JoJ',	{ // TODO: zone a modifier pour la notification Stream ON
-					icon : 'img/logo_300.png',
+	return new Notification('Stream JoJ',	{
+					icon : 'img/JoJ_64.png',
 					title : 'Welcome in the family',
 					body : 'stream up les copains !'
 	});
