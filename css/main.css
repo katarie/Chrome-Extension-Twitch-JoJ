@@ -8,8 +8,7 @@ body{
 	margin: 0;
 	width: 450px;
 	height: 250px;
-	color: skyblue;
-	background: black;
+	background: #171716;
 }
 
 #font{
@@ -18,6 +17,7 @@ body{
 	margin-left: auto;
 	height: 250px;
 	width: 450px;
+	position: absolute;
 }
 
 #texte{
@@ -55,6 +55,16 @@ body{
     top: 15px;
     z-index: 2;
 }
+
+.center{
+	position: relative;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	top: 255px;
+	left: 195px;
+}
+
 .container {
 	background-color: white;
     height: 0px;
@@ -135,10 +145,12 @@ body{
 /* graph social */
 
 .social {
-	width: 100%;
+	width: 450px;
 	display: flex;
 	align-items: stretch;
 	justify-content: stretch;
+	position: absolute;
+	top: 285px;
 }
 .social a {
 	width: 100%;
@@ -154,5 +166,5 @@ body{
 	-webkit-transition: .2s ease all;
 }
 .social a:hover {
-	border-color: white;
+	border-color: rgba(29,148,210,1);
 }

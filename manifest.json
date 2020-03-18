@@ -2,28 +2,26 @@
 	"manifest_version" : 2,
 	"name" : "JoJ",
 	"short_name" : " Notifications Twitch",
-	"description" : "Etre au courant quand JoJ est en live, accéder au planning de la semaine et liens vers les reseaux sociaux", //TODO : changer la description
-	"version" : "1.4.9",
+	"description" : "Etre au courant quand JoJ est en live, accéder au planning de la semaine et liens vers les réseaux sociaux",
+	"version" : "1.6.6",
 	"author" : "Azamir",
 
 	"permissions" : [
-		"http://*/*",
-		"https://*/*", 
 		"notifications",
 		"tabs",
 		"storage"
 	],
 	"browser_action" : {
 
-		"default_icon" : "img/JoJ_64.png",
+		"default_icon" : "img/JoJ_radius_64.png",
         "default_popup" : "popup.html"
 	},
 
 
 	"icons" : {
-		"64" : "img/JoJ_64.png",//TODO : changer l'icone par defaut
-		"128" : "img/JoJ_transparent_128.png",
-		"256" : "img/JoJ_transparent_256.png"
+		"64" : "img/JoJ_radius_64.png",
+		"128" : "img/JoJ_radius_128.png",
+		"256" : "img/JoJ_radius_256.png"
 	},
 
 	"background" : {

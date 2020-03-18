@@ -36,12 +36,12 @@ function checkStream(user, client_id, api, notification){
 				//Fuze is not streaming
 				stateNotif = "waitNotif";
 				$('.msgOffline').show();
-				$('#thirdWordStatusLink').html("OFFLINE");	// TODO : possibiliter de changer [HORS LIGNE]
+				$('#thirdWordStatusLink').html("OFFLINE");
 				$('#thirdWordStatusLink').css('color', 'red');
 				$('.viewerBox').hide(); 
 				$('.titleBox').hide(); 
 				$('.gameBox').hide();
-				chrome.browserAction.setIcon({path: "img/JoJ_64.png"}); // TODO : changer Icone Stream OFF
+				chrome.browserAction.setIcon({path: "img/Logo_red_64_radius.png"});
 				
 			}else{
 				//is streaming
@@ -74,7 +74,7 @@ function checkStream(user, client_id, api, notification){
 				$('#liveTitle').html(liveTitle);
 				$('.msgOffline').hide();
 				$('.gameBox').css('visibility', 'visible');
-				chrome.browserAction.setIcon({path: "img/JoJ_transparent_64.png"});
+				chrome.browserAction.setIcon({path: "img/Logo_blue_64_radius.png"});
 			}	
 				
 				if(stateNotif === "ready2sendNotif" && notification===true){
@@ -102,9 +102,9 @@ function cleanNotif(notif){
 
 function sendNotif(){
 	return new Notification('Stream JoJ',	{
-					icon : 'img/JoJ_64.png',
+					icon : 'img/JoJ_radius_64.png',
 					title : 'Welcome in the family',
-					body : 'stream up les copains !'
+					body : 'Stream up les copains !'
 	});
 }
 
