@@ -3,13 +3,17 @@
 	"name" : "JoJ",
 	"short_name" : " Notifications Twitch",
 	"description" : "Etre au courant quand JoJ est en live, accéder au planning de la semaine et liens vers les réseaux sociaux",
-	"version" : "1.6.6",
+	"version" : "1.7.8",
 	"author" : "Azamir",
 
 	"permissions" : [
 		"notifications",
-		"tabs",
-		"storage"
+		"activeTab",
+		"storage",
+		"https://twitch.tv/*",
+		"https://discordapp.com/invite/*",
+		"https://twitter.com/*",
+		"https://www.youtube.com/channel/*"
 	],
 	"browser_action" : {
 
